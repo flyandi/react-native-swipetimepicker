@@ -1,0 +1,33 @@
+{
+  "name": "react-native-swipetimepicker",
+  "version": "0.0.1",
+  "description": "A time picker based on react-native-swipebox",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flyandi/react-native-swipetimepicker.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "swipebox",
+    "time picker",
+    "time",
+    "react-component"
+  ],
+  "author": "Andy Schwarz <flyandi@yahoo.com> (http://flyandi.net)",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/flyandi/react-native-swipetimepicker/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/flyandi/react-native-swipetimepicker/issues"
+  },
+  "homepage": "https://github.com/flyandi/react-native-swipetimepicker#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react-native-swipebox": "^0.0.1"
+  }
+}
