@@ -112,10 +112,14 @@ import SwipeTimePicker from 'react-native-swipetimepicker';
 
 **Rounded**
 
+![alt text](https://github.com/flyandi/react-native-swipetimepicker/raw/master/docs/rounded.png "react-native-swipetimepicker")
+
+
 ```es6
 <SwipeTimePicker
     size={120}
     borderRadius={120}
+    backgroundColor={'#5cb85c'}
     onChange={(time) => console.log(time, time.text)}
 />
 ```
