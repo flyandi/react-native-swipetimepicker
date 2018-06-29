@@ -1,6 +1,6 @@
 {
   "name": "react-native-swipetimepicker",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A time picker based on react-native-swipebox",
   "main": "src/index.js",
   "repository": {
@@ -28,6 +28,6 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
-    "react-native-swipebox": "^0.0.1"
+    "react-native-swipebox": "^0.0.5"
   }
 }
