@@ -1,6 +1,6 @@
-# react-native-swipebox
+# react-native-swipetimepicker
 
-A simple swipe box component. Allows to be fully customizable.
+A simple swipe time picker component. Allows to be fully customizable.
 
 ![alt text](https://github.com/flyandi/react-native-swipetimepicker/raw/master/docs/swipetimepicker.gif "react-native-swipetimepicker")
 
