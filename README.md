@@ -51,7 +51,8 @@ The `onChange` event returns the following data structure:
   "minute": (integer) the value of the minute,
   "ampm": (boolean) TRUE for PM and FALSE for AM,
   "text": (string) A prepared time string, e.g. 12:15AM or 17:30
-  "time": (date) A JavaScript date object containing the time
+  "time": (date) A JavaScript date object containing the time,
+  "timevalue": (timestamp) The timestamp value of the time
 }
 ```
 

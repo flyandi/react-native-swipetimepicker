@@ -233,18 +233,21 @@ export default class SwipeTimePicker extends Component {
         const minute = parseInt(this.getMinuteTiles()[state.minuteIndex]);
         const ampm = state.apIndex == 1 ? true : false;
 
+        const adjustedHour = this.props.is24 ? hour : ((ampm ? hour : (hour == 12 ? 0 : hour)) + (ampm ? (hour > 12 ? 12 : 0) : 0) );
 
         const time = {
             hour,
             minute,
             ampm,
-            text: ([this.fillZero(hour), this.fillZero(minute)].join(":")) + (this.props.is24 ? '' : (ampm ? 'PM' : 'AM'))
+            text: ([this.fillZero(hour), this.fillZero(minute)].join(":")) + (this.props.is24 ? '' : (ampm ? 'PM' : 'AM')),
+            timevalue: (adjustedHour * 3600) + (minute * 60)
         };
 
-        time.time = new Date();
-        time.time.setHours(this.props.is24 ? hour : (hour + (ampm ? 12 : 0) ));
+        time.time = new Date(time.timevalue); // no date
+        time.time.setHours(adjustedHour);
         time.time.setMinutes(minute);
         time.time.setSeconds(0);
+        time.time.setMilliseconds(0);
 
         if(!p) {
             this.setState(_.extend(p, time));
