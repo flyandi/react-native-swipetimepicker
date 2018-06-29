@@ -235,8 +235,6 @@ export default class SwipeTimePicker extends Component {
 
         const adjustedHour = this.props.is24 ? hour : (ampm ? (hour == 12 ? hour : hour + 12) : (hour == 12 ? 0 : hour));
 
-        console.log("ADJ", this.props.is24, adjustedHour, ampm, hour);
-
         const time = {
             hour,
             minute,
